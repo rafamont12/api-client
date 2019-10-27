@@ -8,9 +8,12 @@ import FetchClient from "./src/Clients/FetchClient";
 
 export default Client;
 
-export let Request;
-export let AxiosClient;
-export let FetchClient;
+export {
+  Request,
+  AxiosClient,
+  FetchClient,
+  Client
+};
 
 export function createClient({ request, tokenModule, server_url, routes, storageModuleOptions, storageKey = 'user', tokenKey = 'access_token' }) {
   if (!tokenModule) {
