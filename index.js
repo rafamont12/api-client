@@ -3,6 +3,8 @@ import TokenModule from "token-module";
 
 import Client from "./src/Clients/Client";
 import Request from "./src/Requests/Request";
+import AxiosRequest from "./src/Requests/AxiosRequest";
+import FetchRequest from "./src/Requests/FetchRequest";
 import AxiosClient from "./src/Clients/AxiosClient";
 import FetchClient from "./src/Clients/FetchClient";
 
@@ -12,7 +14,9 @@ export {
   Request,
   AxiosClient,
   FetchClient,
-  Client
+  Client,
+  AxiosRequest,
+  FetchRequest
 };
 
 export function createClient({ request, tokenModule, server_url, routes, storageModuleOptions, storageKey = 'user', tokenKey = 'access_token' }) {
