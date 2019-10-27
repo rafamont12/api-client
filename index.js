@@ -10,13 +10,13 @@ import FetchClient from "./src/Clients/FetchClient";
 
 export default Client;
 
-export {
+module.exports = {
   Request,
+  AxiosRequest,
+  FetchRequest,
   AxiosClient,
   FetchClient,
-  Client,
-  AxiosRequest,
-  FetchRequest
+  Client
 };
 
 export function createClient({ request, tokenModule, server_url, routes, storageModuleOptions, storageKey = 'user', tokenKey = 'access_token' }) {
