@@ -2,3 +2,5 @@
 webpack.config.js
 src
 .gitignore
+index.js
+.idea
