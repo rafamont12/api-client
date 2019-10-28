@@ -10,7 +10,7 @@ import FetchClient from "./src/Clients/FetchClient";
 
 export default Client;
 
-module.exports = {
+export {
   Request,
   AxiosRequest,
   FetchRequest,
