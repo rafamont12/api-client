@@ -19,5 +19,8 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js']
+  },
+  optimization: {
+    minimize: false
   }
 };
