@@ -33,6 +33,10 @@ export default class Request {
       this.url = this.pagination.paginate(this.url, options.pagination);
     }
 
+    if (options && options.query) {
+      this.url = this.queryBuilder.insert(this.url, options.query);
+    }
+
     if (this.auth) {
       this.headers.Authorization = this.tokenModule.getToken();
     }
